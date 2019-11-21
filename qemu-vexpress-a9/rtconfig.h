@@ -144,6 +144,7 @@
 
 #define RT_USING_LIBC
 #define RT_USING_PTHREADS
+#define PTHREAD_NUM_MAX 8
 #define RT_USING_POSIX
 #define RT_USING_POSIX_MMAP
 #define RT_USING_POSIX_TERMIOS
@@ -166,11 +167,12 @@
 #define NETDEV_USING_IFCONFIG
 #define NETDEV_USING_PING
 #define NETDEV_USING_NETSTAT
+#define NETDEV_USING_AUTO_DEFAULT
 
 /* light weight TCP/IP stack */
 
 #define RT_USING_LWIP
-#define RT_USING_LWIP202
+#define RT_USING_LWIP210
 #define RT_LWIP_ICMP
 #define RT_LWIP_DNS
 #define RT_LWIP_DHCP
@@ -219,6 +221,7 @@
 
 
 /* Utilities */
+
 #define RT_USING_LWP
 
 /* RT-Thread online packages */
