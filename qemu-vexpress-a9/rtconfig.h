@@ -208,7 +208,9 @@
 #define LWIP_SO_RCVTIMEO 1
 #define LWIP_SO_SNDTIMEO 1
 #define LWIP_SO_RCVBUF 1
-#define LWIP_NETIF_LOOPBACK 0
+#define RT_LWIP_NETIF_LOOPBACK
+#define LWIP_NETIF_LOOPBACK 1
+#define RT_LWIP_STATS
 #define RT_LWIP_USING_PING
 
 /* Modbus master and slave stack */
