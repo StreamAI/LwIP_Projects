@@ -134,7 +134,7 @@ static void httpserver_thread(void *arg)
 }
 
 /** Initialize the HTTP server (start its thread) */
-void httpserver_init()
+static void httpserver_init()
 {
   /* set LED0 pin mode to output */
   rt_pin_mode(LED1_PIN, PIN_MODE_OUTPUT);

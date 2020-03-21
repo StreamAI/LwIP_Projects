@@ -83,12 +83,19 @@
 
 #define RT_USING_DEVICE_IPC
 #define RT_PIPE_BUFSZ 512
+#define RT_USING_SYSTEM_WORKQUEUE
+#define RT_SYSTEM_WORKQUEUE_STACKSIZE 2048
+#define RT_SYSTEM_WORKQUEUE_PRIORITY 23
 #define RT_USING_SERIAL
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
+#define RT_USING_I2C
+#define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
 #define RT_USING_SPI
 #define RT_USING_ENC28J60
+#define RT_USING_SENSOR
+#define RT_USING_SENSOR_CMD
 
 /* Using WiFi */
 
@@ -105,6 +112,12 @@
 
 /* Socket abstraction layer */
 
+#define RT_USING_SAL
+
+/* protocol stack implement */
+
+#define SAL_USING_LWIP
+#define SAL_SOCKETS_NUM 16
 
 /* Network interface device */
 
@@ -201,6 +214,9 @@
 
 /* peripheral libraries and drivers */
 
+#define PKG_USING_SENSORS_DRIVERS
+#define PKG_USING_AHT10
+#define PKG_USING_AHT10_LATEST_VERSION
 
 /* miscellaneous packages */
 
@@ -217,6 +233,7 @@
 /* Onboard Peripheral Drivers */
 
 #define BSP_USING_STLINK_TO_USART
+#define BSP_USING_AHT10
 
 /* On-chip Peripheral Drivers */
 
@@ -225,6 +242,19 @@
 #define BSP_USING_UART1
 #define BSP_USING_SPI
 #define BSP_USING_SPI2
+#define BSP_USING_I2C
+#define BSP_USING_I2C3
+
+/* Notice: PC0 --> 32; PC1 --> 33 */
+
+#define BSP_I2C3_SCL_PIN 32
+#define BSP_I2C3_SDA_PIN 33
+#define BSP_USING_I2C4
+
+/* Notice: PC1 --> 33; PD6 --> 54 */
+
+#define BSP_I2C4_SCL_PIN 54
+#define BSP_I2C4_SDA_PIN 33
 
 /* Board extended module Drivers */
 
